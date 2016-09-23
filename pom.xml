@@ -182,7 +182,21 @@
                   <skip>false</skip>
                   <test>SimpleDeploymentTestCase</test>
                   <systemPropertyVariables>
-                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:10.0.0.Beta2:managed
+                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:10.0.0.Final:managed
+                    </arq.container.chameleon.configuration.chameleonTarget>
+                  </systemPropertyVariables>
+                </configuration>
+              </execution>
+              <execution>
+                <id>wf101</id>
+                <goals>
+                  <goal>test</goal>
+                </goals>
+                <configuration>
+                  <skip>false</skip>
+                  <test>SimpleDeploymentTestCase</test>
+                  <systemPropertyVariables>
+                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:10.1.0.Final:managed
                     </arq.container.chameleon.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
@@ -196,7 +210,7 @@
                   <skip>false</skip>
                   <test>SimpleDeploymentTestCase</test>
                   <systemPropertyVariables>
-                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:9.0.0.Final:managed
+                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:9.0.2.Final:managed
                     </arq.container.chameleon.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
@@ -210,7 +224,7 @@
                   <skip>false</skip>
                   <test>SimpleDeploymentTestCase</test>
                   <systemPropertyVariables>
-                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:8.2.0.Final:managed
+                    <arq.container.chameleon.configuration.chameleonTarget>wildfly:8.2.1.Final:managed
                     </arq.container.chameleon.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
@@ -269,15 +283,15 @@
                   <test>SimpleDeploymentTestCase</test>
                   <systemPropertyVariables>
                     <arquillian.launch>remoteTest</arquillian.launch>
-                    <arq.container.managed.configuration.chameleonTarget>wildfly:9.0.0.Final:managed
+                    <arq.container.managed.configuration.chameleonTarget>wildfly:9.0.2.Final:managed
                     </arq.container.managed.configuration.chameleonTarget>
-                    <arq.container.remote.configuration.chameleonTarget>wildfly:9.0.0.Final:remote
+                    <arq.container.remote.configuration.chameleonTarget>wildfly:9.0.2.Final:remote
                     </arq.container.remote.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
               </execution>
               <execution>
-                <id>wf10-remote</id>
+                <id>wf101-remote</id>
                 <goals>
                   <goal>test</goal>
                 </goals>
@@ -286,9 +300,9 @@
                   <test>SimpleDeploymentTestCase</test>
                   <systemPropertyVariables>
                     <arquillian.launch>remoteTest</arquillian.launch>
-                    <arq.container.managed.configuration.chameleonTarget>wildfly:10.0.0.Beta2:managed
+                    <arq.container.managed.configuration.chameleonTarget>wildfly:10.1.0.Final:managed
                     </arq.container.managed.configuration.chameleonTarget>
-                    <arq.container.remote.configuration.chameleonTarget>wildfly:10.0.0.Beta2:remote
+                    <arq.container.remote.configuration.chameleonTarget>wildfly:10.1.0.Final:remote
                     </arq.container.remote.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
@@ -330,7 +344,7 @@
                   <skip>false</skip>
                   <test>DomainDeploymentTestCase</test>
                   <systemPropertyVariables>
-                    <arq.container.chameleon.configuration.chameleonTarget>wildfly domain:10.0.0.Final:managed
+                    <arq.container.chameleon.configuration.chameleonTarget>wildfly domain:10.1.0.Final:managed
                     </arq.container.chameleon.configuration.chameleonTarget>
                   </systemPropertyVariables>
                 </configuration>
