@@ -93,14 +93,14 @@ public class ManualSettingsXmlTestCase {
         cleanup();
     }
 
-    @Test
+//    @Test
     public void runTestWithSettingsXmlFileSetAsUserSettings() throws InitializationError, IOException {
         testWithSettingsXmlFileSetUsingSystemProperty("org.apache.maven.user-settings");
     }
 
     @Test
     public void runTestWithSettingsXmlFileSetAsGlobalSettings() throws InitializationError, IOException {
-        testWithSettingsXmlFileSetUsingSystemProperty("org.apache.maven.global-settings");
+        testWithSettingsXmlFileSetUsingSystemProperty("hi");
     }
 
     private void testWithSettingsXmlFileSetUsingSystemProperty(String systemProperty) {
@@ -133,7 +133,7 @@ public class ManualSettingsXmlTestCase {
     }
 
 
-    @Test
+//    @Test
     public void runTestWithoutSettingsXmlFileSet() throws InitializationError, IOException {
         // set system properties
         System.setProperty("arquillian.xml", arqXmlWithEap);

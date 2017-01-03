@@ -2,7 +2,6 @@ language: java
 before_install:
   - sed -i.bak -e 's|https://nexus.codehaus.org/snapshots/|https://oss.sonatype.org/content/repositories/codehaus-snapshots/|g' ~/.m2/settings.xml
 script:
-        mvn clean test &&
-        mvn clean test -Pall
+        mvn clean test -Dtest=ManualSettingsXmlTestCase -Dorg.apache.maven.global-settings=`pwd`/target/test-classes/settings-repository/dummy-settings.xml
 jdk:
         - oraclejdk8
